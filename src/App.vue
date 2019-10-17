@@ -3,22 +3,25 @@
     <Header></Header>
     <router-view></router-view>
     <Footer />
-    <div style="height:1000px"></div>
+    <goTop />
   </div>
 </template>
 
 <script>
-import Header from './pages/Header/Header'
-import Footer from './pages/Footer/Footer'
+import Header from "./pages/Header/Header";
+import Footer from "./pages/Footer/Footer";
+import goTop from "./pages/goTop/GoTop";
 export default {
-  name: 'App',
-  components:{
+  name: "App",
+  components: {
     Header,
-    Footer
+    Footer,
+    goTop
+  },
+  created() {
+    setTimeout(() => {
+      document.body.removeChild(document.getElementById("Loading"));
+    }, true);
   }
-}
+};
 </script>
-
-<style>
-
-</style>

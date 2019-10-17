@@ -1,6 +1,8 @@
 <template>
   <div>
+    <!-- 加入我们banner -->
     <us-banner />
+    <!-- 合伙人价格 -->
     <partnerPrice />
   </div>
 </template>

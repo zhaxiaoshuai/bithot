@@ -1,7 +1,7 @@
 # bitred
 
 > A Vue.js project
-
+> 开发工具选用 VS Code + webstorm
 ## Build Setup
 
 ``` bash
@@ -33,6 +33,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
           team            // 团队信念
           Index           // 比特红首页文件
         Join_us
+          // 只有输入了正确的十一位手机号才会发送验证码，默认点不动的状态
           getcode         // 获取验证码组件
           partnerPrice    // 合伙人价格目录
       config              // 配置rem

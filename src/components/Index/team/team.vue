@@ -121,8 +121,13 @@ export default {};
       font-size: 0.22rem;
       font-family: Microsoft YaHei;
       color: rgba(196, 196, 196, 1);
-      border-bottom: 1px solid rgba(196, 196, 196, 1);
+      border-bottom: 2px solid rgba(196, 196, 196, 1);
       padding-bottom: 0.1rem;
+      cursor: pointer;
+      &:hover {
+        color: rgba(251, 16, 48, 1);
+        border-bottom: 2px solid rgba(251, 16, 48, 1);
+      }
     }
   }
   .smallIconTwo {

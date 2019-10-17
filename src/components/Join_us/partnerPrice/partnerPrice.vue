@@ -78,14 +78,14 @@ export default {
 <style lang="scss" scope="this api replaced by slot-scope in 2.5.0+">
 .partnerPrice {
   text-align: center;
-  padding: .5rem 0;
+  padding: 1.5rem 0;
   box-sizing: border-box;
   .threeDate {
     background: rgba(253, 253, 253, 1);
     box-shadow: 1px 16px 30px rgba(181, 179, 185, 0.35);
     padding: 0.6rem;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: .2rem auto;
     width: 90%;
     .date {
       font-size: 16px;

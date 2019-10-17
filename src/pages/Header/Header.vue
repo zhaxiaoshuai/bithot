@@ -2,6 +2,7 @@
   <div class="header clearfix">
     <el-container>
       <el-header class="container clearfix">
+        <!--pc导航-->
         <el-row class=" clearfix">
           <!--左侧logo-->
           <Logo :isnumber="6" :phoneNumber="14"></Logo>
@@ -20,14 +21,15 @@
             </ul>
           </el-col>
         </el-row>
+        <!--手机端导航文字-->
         <el-row v-show="isShow">
           <el-col>
-            <ul class="iphoneNav">
+            <ul class="iphoneNav" @click="isPhoneShow">
               <router-link
                 v-for="(navRighText, index) in navRighTexts"
                 :key="index"
                 :to="navRighText.url"
-                tag="span"
+                tag="li"
               >{{navRighText.name}}</router-link>
             </ul>
           </el-col>
@@ -43,6 +45,7 @@ export default {
   data() {
     return {
       navRighTexts: [
+        // 后期如果想改跳转路由 只需更改 url:{name:'xxx'}属性即可
         {
           name: "首页",
           url: {
@@ -131,7 +134,8 @@ export default {
   position: relative;
   z-index: 111;
   li {
-    background: red;
+    color: #666;
+    background: #fff;
     text-align: center;
     font-size: 0.2rem;
     margin-left: 0.45rem;
