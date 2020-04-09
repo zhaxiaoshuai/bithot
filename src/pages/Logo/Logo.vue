@@ -1,16 +1,8 @@
-<!--
- * @Descripttion: 
- * @version: 
- * @Author: zxz
- * @Date: 2020-04-09 11:08:26
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-04-09 11:10:47
- -->
 <template>
   <div class="leftLogo" :class="isClearfix">
     <el-col :span="isnumber" :xs="phoneNumber">
       <img src="../../assets/log0o.png" alt="logo" />
-      <p class="bold">比特11红</p>
+      <p class="bold">比特红</p>
       <p class="small">Everyone is a spokesman</p>
     </el-col>
   </div>
